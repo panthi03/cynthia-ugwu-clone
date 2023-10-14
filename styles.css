@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#circle-cursor{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 99999;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+/* .honours{
+    position: fixed;
+    width: 50px;
+    height: 170px;
+    background-color: white;
+    top: 38vh;
+    right: 0;
+} */
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem {
+    transform: translateY(100%);
+}
+
+.main{
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    padding: 0px 30px 15px 30px;
+}
+
+/* NAVIGATION BAR */
+.nav-bar{
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.05rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADING */
+
+h1{
+    text-transform: uppercase;
+    font-size: 11vw;
+    color: #A3A3A3;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+#h1-sec{
+    padding: 0px 0px 0px 160px;
+}
+
+.head-align{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: end;
+}
+.subheading{
+    text-align: end;
+    padding-right: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/**/
+.availabilty{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 120px;
+    text-align: right;
+    line-height: 2.1;
+    padding-right: 10px;
+}
+
+/** Hero footer **/
+.hero-footer{
+    width: 95%;
+    position: absolute;
+    bottom: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/**** Second section ****/
+.second-section{
+    height: 100vh;
+    width: 100%;
+    padding: 0px 35px;
+}
+
+.elem{
+    position: relative;
+    width: 90%;
+    border-top: 1px solid #A3A3A3;
+    padding: 5vw 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elem h1{
+    font-size: 7.5vw;
+}
+
+.sec-3{
+    border-bottom: 1px solid #A3A3A3;
+}
+
+.elem img{
+    position: absolute;
+    height: 150%;
+    display: none;
+    z-index: 999;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+/*** About section ***/
+.about-section{
+    margin-top: 11vw;
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+
+}
+.about{
+    display: flex;
+    width: 60%;
+    gap: 6vw;
+    /* align-items: center; */
+}
+
+.about img{
+    /* width: 250px;
+    height: 250px; */
+    width: 16vw;
+    height: 16vw;
+}
+
+h5{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #A3A3A3;
+}
+
+.about-text{
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+.description button{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 300;
+    border-radius: 100px;
+    padding: 5px 22px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+.description button:hover{
+    background-color: white;
+    color: black;
+}
+
+/**** subscribe ****/
+.subscribe{
+    padding-left: 40px;
+    margin-top: 11vw;
+    padding-bottom: 10vw;
+}
+
+
+/********* footer ***********/
+footer{
+    display: flex;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.foot-left{
+    display: flex;
+    width: 60%;
+    padding-left: 40px;
+    gap: 30px;
+    align-items: center;
+}
+
+.foot-right{
+    padding-right: 40px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: flex;
+    width: 40%;
+    justify-content: right;
+    gap: 50px;
+    align-items: center;
+}
+
+/***************/
+.cap-text{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
